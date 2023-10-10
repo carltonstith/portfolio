@@ -3,7 +3,6 @@ import { ViewportScroller } from '@angular/common';
 declare var $: any;
 import { NavbarService } from '../../services/navbar.service';
 import { FooterService } from '../../services/footer.service';
-//import * as $ from "jquery";
 
 @Component({
   selector: 'app-experience',
@@ -55,61 +54,6 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.nav.hide();
     this.footer.hide();
-
-    // setTimeout(() => {
-    //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-    //     if (location.pathname.replace(/^\//, '') === window.location.pathname.replace(/^\//, '') && location.hostname === window.location.hostname) {
-    //       var target = $(window.location.hash)
-    //       target = target.length ? target : $('[name=' + window.location.hash.slice(1) + ']')
-    //       if (target.length) {
-    //         $('html, body').animate({
-    //           scrollTop: (target.offset().top)
-    //         }, 1000, 'easeInOutExpo')
-    //         return false
-    //       }
-    //     }
-    //   })
-
-    //   // Closes responsive menu when a scroll trigger link is clicked
-    //   $('.js-scroll-trigger').click(function () {
-    //     $('.navbar-collapse').collapse('hide')
-    //   })
-
-    //   // Activate scrollspy to add active class to navbar items on scroll
-    //   $('body').scrollspy({
-    //     target: '#sideNav'
-    //   })
-
-    //   $('.bg-primary').attr('style', 'background-color: #E67E22 !important');
-    // }, 1000);
-
-    //const $ = this.jquery
-    // this.$nextTick(() => {
-    //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-    //     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-    //       var target = $(this.hash)
-    //       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']')
-    //       if (target.length) {
-    //         $('html, body').animate({
-    //           scrollTop: (target.offset().top)
-    //         }, 1000, 'easeInOutExpo')
-    //         return false
-    //       }
-    //     }
-    //   })
-
-    //   // Closes responsive menu when a scroll trigger link is clicked
-    //   $('.js-scroll-trigger').click(function () {
-    //     $('.navbar-collapse').collapse('hide')
-    //   })
-
-    //   // Activate scrollspy to add active class to navbar items on scroll
-    //   $('body').scrollspy({
-    //     target: '#sideNav'
-    //   })
-
-    //   $('.bg-primary').attr('style', 'background-color: #E67E22 !important');
-    // })
   }
 
   goToAboutSection() {
@@ -130,10 +74,5 @@ export class ExperienceComponent implements OnInit {
 
   goToVolunteerSection() {
     this.scroller.scrollToAnchor("volunteer")
-    // document.getElementById('volunteer')?.scrollIntoView({
-    //   behavior: 'smooth',
-    //   block: 'start',
-    //   inline: 'nearest'
-    // });
   }
 }

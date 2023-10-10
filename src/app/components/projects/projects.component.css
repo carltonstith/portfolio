@@ -13,12 +13,8 @@
   margin-top: 30px;
   margin-bottom: 50px;
   border-radius: 0;
-  /* opacity: 0.9;
-  transition: 0.3s; */
 }
-/* .p-image:hover {
-  opacity: 1;
-} */
+
 .featured-title {
   font-weight: 700;
   background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));

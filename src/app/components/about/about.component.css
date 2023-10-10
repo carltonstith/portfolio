@@ -74,15 +74,3 @@
   -webkit-box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
   box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
 }
-/* .tech {
-  height: 56px;
-} */
-/* .tech-icon {
-  transition: 1s ease-in-out;
-  color: purple;
-}
-.tech-icon:hover {
-  transition-property: color;
-  transition-duration: 1s;
-  -webkit-transform: rotate(2turn);
-} */
