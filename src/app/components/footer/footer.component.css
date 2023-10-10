@@ -1,0 +1,41 @@
+footer {
+  background: #404040;
+  color: #cecece;
+}
+.fa-stack {
+  color: rgba(0,123,255,0)
+}
+.fab {
+  color: #fff;
+}
+.padding-top40 {
+padding-top: 40px;
+}
+.padding-top20 {
+  padding-top: 20px;
+}
+.padding-bottom20 {
+  padding-bottom: 20px;
+}
+.padding-bottom10 {
+  padding-bottom: 10px;
+}
+.padding-top10 {
+  padding-top: 10px;
+}
+.orange {
+  color: #e67e22;
+}
+.footer-alpha {
+  margin: 30px 0 30px 0;
+}
+.footer-alpha .col-md-3 a {
+  color: #cecece;
+  text-decoration: none;
+}
+.footer-alpha .col-md-3 a:hover {
+  color: #b5b5b5;
+}
+.credit {
+  text-indent: -9999px;
+}

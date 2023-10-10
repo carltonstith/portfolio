@@ -1,16 +1,42 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ResumeNavbarComponent } from './components/resume-navbar/resume-navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ResumeLayoutComponent } from './layouts/resume-layout/resume-layout.component';
+import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    NavbarComponent,
+    ResumeNavbarComponent,
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ExperienceComponent,
+    ContactComponent,
+    NotFoundComponent,
+    ResumeLayoutComponent,
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

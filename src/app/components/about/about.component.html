@@ -1,0 +1,163 @@
+<div class="about">
+  <section>
+    <div class="container">
+      <div class="row margin-top40 margin-bottom20">
+        <div class="col">
+          <h1 class="display-3">Carlton Stith likes...<br><span class="featured-title">{{ title[0] }}</span></h1>
+          <div class="my-4">
+            <p class="lead">I'm a front-end developer making beautiful things for the web right outside the city of Philadelphia, PA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 margin-top40 margin-bottom40">
+          <h3 class="text-center">Latest From the Blog</h3>
+        </div>
+        <!-- Latest Blog Entries-->
+
+        <div class="col-md-4 d-flex" *ngFor="let post of posts; let i = index">
+          <div class="card mb-4 shadow-sm">
+            <img src={{post.jetpack_featured_media_url}} alt="CeeJayS Media blog featured image" class="blog-image">
+          <div class="card-body">
+              <div>
+                <h3>{{ post.title.rendered }}</h3>
+                <small class="text-muted">{{ post.date | date }}</small>
+                <div class="bar"></div>
+                <!-- <p v-html="post.excerpt.rendered"></p> -->
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href={{post.link}} target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+      </div>
+      </div>
+    </div>
+  </article>
+  <article>
+    <div class="container">
+      <div class="row margin-top40 margin-bottom40">
+        <!-- <div class="col-md-12 text-center margin-bottom20">
+            <h3>Some of the technologies that I use on a daily basis</h3>
+        </div> -->
+        <hr>
+        <div class="container px-4 py-5" id="icon-grid">
+          <h2 class="pb-2 border-bottom text-center">Some of the technologies that I use on a daily basis</h2>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/html.png" alt="HTML5">
+                <!-- <i class="fab fa-html5 fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/css-3.png" alt="CSS3">
+                <!-- <i class="fab fa-css3 fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/js.png" alt="JavaScript">
+                <!-- <i class="fab fa-js-square fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/nodejs.png" alt="Node.js">
+                <!-- <i class="fab fa-node-js fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg> -->
+              <div>
+                <img src="../../../assets/icons8-angular-48.png" alt="Angular" class="tech">
+                <!-- <i class="fab fa-angular fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/react.png" alt="react.js">
+                <!-- <i class="fab fa-react fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/git.png" alt="git">
+                <!-- <i class="fab fa-github fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+            <div class="col d-flex col d-flex justify-content-center">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg> -->
+              <div>
+                <img class="tech" src="../../../assets/c-sharp.png" alt="c#">
+                <!-- <i class="fab fa-wordpress fa-4x tech-icon"></i> -->
+                <!-- <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-12 toolBox text-center">
+
+          <div class="col-sm-3 col-xl-3 col-lg-3 margin-bottom15">
+            <i class="fab fa-html5 fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 col-lg-3 margin-bottom15">
+            <i class="fab fa-css3 fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 col-lg-3 margin-bottom15">
+            <i class="fab fa-js-square fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 col-lg-3 margin-bottom15">
+            <i class="fab fa-node-js fa-4x tech-icon"></i>
+          </div>
+
+          <div class="col-sm-3 col-xl-3 margin-top15">
+            <i class="fab fa-adobe fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 margin-top15">
+            <i class="fab fa-vuejs fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 margin-top15">
+            <i class="fab fa-github fa-4x tech-icon"></i>
+          </div>
+          <div class="col-sm-3 col-xl-3 margin-top15">
+            <i class="fab fa-wordpress fa-4x tech-icon"></i>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </article>
+</div>

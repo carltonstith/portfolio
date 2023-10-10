@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+hmtl, body {
+  font-family: 'Open Sans', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+.btn {
+  color: #fff;
+  border-radius: 1.25rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff8a00),
+    to(#e52e47)
+  );
+  background: linear-gradient(90deg, #ff8a00, #e52e47);
+  border-color: transparent;
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+}
+.tech {
+  height: 56px;
+}

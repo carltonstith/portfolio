@@ -1,0 +1,88 @@
+.margin-top15 {
+  margin-top: 15px;
+}
+.margin-bottom15 {
+  margin-bottom: 15px;
+}
+.margin-bottom20 {
+  margin-bottom: 20px;
+}
+.margin-top40 {
+  margin-top: 40px;
+}
+.margin-bottom40 {
+  margin-bottom: 40px;
+}
+.featured-title {
+  font-weight: 700;
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.bar {
+  height: 3px;
+  width: 25%;
+  /* background: #c5712b; */
+  margin: 15px 0;
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+}
+.fab {
+  /* color: #c5712b; */
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card-deck {
+  flex-direction: row;
+}
+.card-group .card {
+    max-width: 25%;
+}
+.blog-image {
+    align-content: center;
+    width: 90%;
+    height: 30vh;
+    margin: 15px auto;
+    border-radius: 0;
+}
+.btn {
+  border-radius: 1.25rem;
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+  border-color: transparent;
+  font-weight: 700;
+  color: #fff;
+  padding: .4rem 1.5rem;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-outline-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+  box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+  box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+}
+/* .tech {
+  height: 56px;
+} */
+/* .tech-icon {
+  transition: 1s ease-in-out;
+  color: purple;
+}
+.tech-icon:hover {
+  transition-property: color;
+  transition-duration: 1s;
+  -webkit-transform: rotate(2turn);
+} */

@@ -1,0 +1,51 @@
+.margin-top40 {
+  margin-top: 40px;
+}
+.margin-bottom40 {
+  margin-bottom: 40px;
+}
+.p-image {
+  width: 430px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+.featured-title {
+  font-weight: 700;
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.btn {
+  border-radius: 1.25rem;
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
+  border-color: transparent;
+  font-weight: 700;
+  padding: .4rem 1.5rem;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-success:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-success:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(72,180,97,0);
+  box-shadow: 0 0 0 0.2rem rgba(72,180,97,0);
+}
+.btn-success.focus, .btn-success:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(72,180,97,0);
+    box-shadow: 0 0 0 0.2rem rgba(72,180,97,0);
+}
+a:focus {
+  color: #fff;
+}
