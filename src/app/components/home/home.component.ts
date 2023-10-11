@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
 
     $(document).ready(() => {
       this.isJqueryWorking = 'Jquery is working !!!';
-      console.log(this.isJqueryWorking);
+      // console.log(this.isJqueryWorking);
     });
   }
 }

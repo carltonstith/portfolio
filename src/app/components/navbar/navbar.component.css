@@ -12,11 +12,17 @@ button {
   border-color: rgba(255, 255, 255);
 }
 
-#nav a {
+.nav a {
   font-weight: 600;
   color: #fff;
 }
 
-#nav a.router-link-exact-active {
+.nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.nav-pills .nav-link.active {
+  /* background-color: linear-gradient(to right,#ff8a00,#e52e47); */
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e47));
+  background: linear-gradient(to right,#ff8a00,#e52e47);
 }
