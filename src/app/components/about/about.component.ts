@@ -18,6 +18,7 @@ export class AboutComponent implements OnInit {
     'Fast Cars',
   ];
   public posts: Posts[] = [];
+  public rendered: [] = [];
 
   constructor(
     private service: BlogService,
@@ -30,7 +31,13 @@ export class AboutComponent implements OnInit {
     this.footer.show();
 
     this.service.getAllPosts().subscribe((data: any) => {
-      console.log(data);
+      //console.log(data);
+
+      // data.forEach((element: any) => {
+      //   this.rendered = element.excerpt.rendered.replace(/(<([^>]+)>)/ig,"");
+
+      // });
+
       this.posts = data;
     });
 

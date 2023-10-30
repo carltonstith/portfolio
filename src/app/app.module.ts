@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResumeLayoutComponent } from './layouts/resume-layout/resume-layout.component';
 import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
 
@@ -34,8 +34,8 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [],

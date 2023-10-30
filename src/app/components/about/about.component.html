@@ -37,7 +37,8 @@
                 <h3>{{ post.title.rendered }}</h3>
                 <small class="text-muted">{{ post.date | date }}</small>
                 <div class="bar"></div>
-                <p>{{ post.excerpt.rendered }}</p>
+                <!-- <p>{{ post.excerpt.rendered }}</p> -->
+                <p [innerHTML]="post.excerpt.rendered"></p>
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
