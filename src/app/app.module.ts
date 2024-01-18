@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ResumeLayoutComponent } from './layouts/resume-layout/resume-layout.component';
 import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -30,13 +31,14 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
     ContactComponent,
     NotFoundComponent,
     ResumeLayoutComponent,
-    DefaultLayoutComponent
+    DefaultLayoutComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

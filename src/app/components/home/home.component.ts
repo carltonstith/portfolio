@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare var $: any;
 import { NavbarService } from '../../services/navbar.service';
 import { FooterService } from '../../services/footer.service';
-import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-home',
@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
   constructor(public nav: NavbarService, public footer: FooterService) {}
 
   ngOnInit() {
-    AOS.init();
 
     this.nav.show();
     this.footer.show();

@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["aos"],
             "outputPath": "dist/temp-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -40,6 +39,9 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/aos/dist/aos.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "tsparticles"
             ]
           },
           "configurations": {
