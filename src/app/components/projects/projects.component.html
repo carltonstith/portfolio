@@ -3,7 +3,12 @@
     <div class="container mt-lg-6">
       <div class="row">
         <div class="col">
-          <h1 class="display-3">Carlton Stith works with...<br><span class="featured-title">{{ title[0] }}</span></h1>
+          <h1 class="display-3">Carlton Stith works with...<br>
+            <!-- <span class="featured-title">{{ title[0] }}</span> -->
+            <span class="featured-title">
+              {{ typedText$ | async }}
+            </span>
+          </h1>
           <div class="my-4">
             <p class="lead">Hi. Thanks for taking a look at <span>my portfolio</span>. <br> Some of the projects that are featured here are <span>labors of love</span> and other were paid projects. <br> I'm currently <span>available for hire</span>.</p>
           </div>

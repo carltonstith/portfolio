@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from 'src/app/services/navbar.service';
 import { FooterService } from 'src/app/services/footer.service';
+import { TypewriterService } from 'src/app/services/typewriter.service';
+import { map } from 'rxjs';
 //import * as AOS from 'aos';
 
 @Component({
@@ -9,7 +11,8 @@ import { FooterService } from 'src/app/services/footer.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  title: string[] = [
+  typedText$:any;
+  titles: string[] = [
     'HTML',
     'CSS',
     'JavaScript',
@@ -22,10 +25,12 @@ export class ProjectsComponent {
   ];
   constructor(
     public footer: FooterService,
-    public nav: NavbarService
+    public nav: NavbarService,
+    public typewriterService: TypewriterService
   ) {}
 
   ngOnInit(): void {
+    this.typedText$ = this.typewriterService.getTypewriterEffect(this.titles).pipe(map((text:string) => text.toUpperCase()));
     // AOS.init();
 
     // this.nav.show();
