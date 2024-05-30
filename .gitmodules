@@ -1,0 +1,3 @@
+[submodule "dist/portfolio"]
+  path = dist/portfolio
+  url = git@github.com:carltonstith/portfolio.git
