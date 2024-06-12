@@ -3,10 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="display-3">
-            {{ name }} is a...<br /><span class="featured-title">{{
-              title[0]
-            }}</span>
+          <!-- <h1 class="display-3">
+            {{ name }} is a...{{ typedText$ | async }}<br />
+          </h1> -->
+          <h1 class="display-3" style="min-height: 160px">
+            {{ name }} is a...<br />
+            <span class="featured-title">
+              {{ typedText$ | async }}
+            </span>
           </h1>
           <div class="my-4">
             <p class="lead">{{ subtitle }}</p>
