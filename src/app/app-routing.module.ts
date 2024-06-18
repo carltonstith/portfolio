@@ -28,16 +28,6 @@ const routes: Routes = [
     path: 'experience',
     component: ExperienceComponent
   },
-  // {
-  //   path: 'experience',
-  //   component: ResumeLayoutComponent,
-  //   children: [
-  //     {
-  //       path: 'experience',
-  //      loadChildren: () => import('./resume/resume.module').then(m => m.ResumeModule)
-  //     }
-  //   ]
-  // },
   {
     path: '**',
     component: NotFoundComponent
