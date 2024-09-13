@@ -12,7 +12,7 @@ import { map } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   typedText$:any;
-  name: string = 'Carlton';
+  name: string = 'Carlton Stith';
   titles: string[] = [
     'Full-Stack Software Engineer',
     ' Problem Solver',

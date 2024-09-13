@@ -14,11 +14,7 @@ import { map } from 'rxjs';
 export class AboutComponent implements OnInit {
   typedText$:any;
   titles: string[] = [
-    'Well Written Code, ',
-    'Beautiful Design, ',
-    'Good Typography, ',
-    'Cool Technology, ',
-    'Fast Cars',
+    'Is a strong believer in easy to read, well written code, '
   ];
   subtitle: string = "I'm a full-stack software engineer solving problems with code right outside the city of Philadelphia, PA."
   public posts: Posts[] = [];

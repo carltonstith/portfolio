@@ -17,6 +17,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ResumeLayoutComponent } from './layouts/resume-layout/resume-layout.component';
 import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
 import { Router, RouterModule } from '@angular/router';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { Router, RouterModule } from '@angular/router';
     NotFoundComponent,
     ResumeLayoutComponent,
     DefaultLayoutComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

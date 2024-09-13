@@ -6,6 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ResumeLayoutComponent } from './layouts/resume-layout/resume-layout.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'experience',
     component: ExperienceComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
   },
   {
     path: '**',
