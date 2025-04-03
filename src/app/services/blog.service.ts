@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BlogService {
-  private baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
+  //private baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
+  private baseUrl = 'http://localhost/dotCeeJayS/wp-json/wp/v2/posts';
 
   constructor(private http: HttpClient) { }
 

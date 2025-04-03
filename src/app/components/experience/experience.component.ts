@@ -11,21 +11,21 @@ import { FooterService } from '../../services/footer.service';
 })
 export class ExperienceComponent implements OnInit {
   public title: string = 'Experience';
-  public name: string = 'CARLTON';
-  public surname: string = 'STITH';
+  public firstName: string = 'Carlton';
+  public lastName: string = 'Stith';
   public address: string = 'Cheltenham, PA 19012 · (215) 896-4556 ·';
-  public email: string = 'stith@temple.edu';
+  public email: string = 'carlton215@gmail.com';
   public aboutMe: string =
     'Experienced Full-Stack Software Engineer seeking to work in an Agile Scrum environment with an awesome team making valuable things. ';
   public experience = [
-    {
-      position: 'Freelance Web Designer',
-      company: 'CeeJayS Media',
-      description:
-        'Freelance web design services. Web content creation from wireframe to deployment. Graphic design services.',
-      startDate: 'November 2013',
-      endDate: 'Present',
-    },
+    // {
+    //   position: 'Freelance Web Designer',
+    //   company: 'CeeJayS Media',
+    //   description:
+    //     'Freelance web design services. Web content creation from wireframe to deployment. Graphic design services.',
+    //   startDate: 'November 2013',
+    //   endDate: 'Present',
+    // },
     {
       position: 'Application Developer 2',
       company: 'The Commonwealth of Pennsylvania - PA State Police',
@@ -71,6 +71,51 @@ export class ExperienceComponent implements OnInit {
     //   startDate: 'April 2010',
     //   endDate: 'November 2015'
     // }
+  ];
+  public volunteer = [
+    {
+      position: 'Volunteer Web Developer',
+      company: 'CeeJayS Media',
+      description: 'Developed and maintained a WordPress website for a local non-profit organization.',
+      startDate: 'November 2013',
+      endDate: 'Present'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2014'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2015'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2018'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2019'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2023'
+    },
+    {
+      position: 'Barcamp Philly Volunteer',
+      company: 'Barcamp Philly',
+      description: 'Volunteered at Barcamp Philly 2019. Helped with setup and breakdown of the event.',
+      startDate: 'November 2024'
+    }
   ];
 
   constructor(public nav: NavbarService, public footer: FooterService, private scroller: ViewportScroller) {}

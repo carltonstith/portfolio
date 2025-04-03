@@ -13,15 +13,15 @@ import { map } from 'rxjs';
 export class ProjectsComponent {
   typedText$:any;
   titles: string[] = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Angular',
-    'React',
-    'SQL',
-    'C#',
-    '.NET',
-    'Ionic'
+    'is a full-stack software engineer solving problems with code.',
+    // 'CSS',
+    // 'JavaScript',
+    // 'Angular',
+    // 'React',
+    // 'SQL',
+    // 'C#',
+    // '.NET',
+    // 'Ionic'
   ];
   constructor(
     public footer: FooterService,

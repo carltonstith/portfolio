@@ -1,24 +1,22 @@
 <div class="container">
   <div
-    class="sidebar border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
-  >
+    class="sidebar border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
+      id="sideNav">
       <a
         class="my-5 navbar-brand js-scroll-trigger"
         routerLink="/"
         routerLinkActive="router-link-active"
-      >
-        <span class="d-block d-lg-none">Carlton Stith</span>
-        <span class="d-none d-lg-block">
+>
+        <span class="d-block d-lg-none">{{ firstName }} {{ lastName }}</span>
+        <!-- <span class="d-none d-lg-block">
           <img
             class="img-fluid img-profile rounded-circle mx-auto mb-2 transformProfile"
             src="../../../assets/logo.svg"
             alt=""
           />
-        </span>
+        </span> -->
       </a>
       <button
         class="navbar-toggler"
@@ -72,8 +70,8 @@
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
         <h1 class="mb-0">
-          {{ name }}
-          <span class="text-primary">{{ surname }}</span>
+          {{ firstName }}
+          <span class="text-primary">{{ lastName }}</span>
         </h1>
         <div class="subheading mb-5">
           {{ address }}
@@ -246,9 +244,16 @@
         <h2 class="mb-5">Volunteer &amp; Misc.</h2>
         <ul class="fa-ul mb-0">
           <li>
-            <i class="fas fa-hands-helping text-warning"></i>
-            Barcamp Philly 2023
-          </li>
+            <!-- <i class="fas fa-hands-helping text-warning"></i> -->
+            <!-- Barcamp Philly 2023 -->
+            <ul>
+              <li *ngFor="let item of volunteer; let i = index;" class="list-style-none">
+                <i class="fas fa-hands-helping text-warning"></i>
+                {{ item.position }}, {{ item.company }}, {{ item.startDate }}
+              </li>
+            </ul>
+
+          <!-- </li>
           <li>
             <i class="fas fa-hands-helping text-warning"></i>
             Barcamp Philly 2019
@@ -264,7 +269,7 @@
           <li>
             <i class="fas fa-hands-helping text-warning"></i>
             Barcamp Philly 2014
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
