@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, isDevMode } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -6,10 +6,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BlogService {
-  //private baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
-  private baseUrl = 'http://localhost/dotCeeJayS/wp-json/wp/v2/posts';
+  private baseUrl: string = '';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    if (isDevMode()==true) {
+      // console.log('Development mode');
+      // console.log(isDevMode());
+      this.baseUrl = 'http://localhost/dotCeeJayS/wp-json/wp/v2/posts'
+    } else {
+      // console.log('Production mode');
+      // console.log(isDevMode());
+      this.baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
+    }
+  }
 
   getAllPosts():Observable<any> {
     let queryParams = new HttpParams();
