@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
   titles: string[] = [
     'Is a strong believer in easy to read, well written code. '
   ];
-  subtitle: string = "I'm a full-stack software engineer solving problems with code right outside the city of Philadelphia, PA."
+  aboutMe: string = "I'm a full-stack .Net software engineer solving problems with code right outside the city of Philadelphia, PA."
   public posts: Posts[] = [];
   public rendered: [] = [];
 
