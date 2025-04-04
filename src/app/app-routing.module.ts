@@ -40,7 +40,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  //imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    errorHandler: (error) => {
+      console.error('Navigation/Router error:', error);
+    }
+  })],
   exports: [RouterModule],
   providers: [provideRouter(routes)],
 })
