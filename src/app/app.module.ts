@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,30 +19,23 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
 import { Router, RouterModule } from '@angular/router';
 import { BlogComponent } from './components/blog/blog.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    NavbarComponent,
-    ResumeNavbarComponent,
-    HomeComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ExperienceComponent,
-    ContactComponent,
-    NotFoundComponent,
-    ResumeLayoutComponent,
-    DefaultLayoutComponent,
-    BlogComponent,
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    RouterModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        FooterComponent,
+        NavbarComponent,
+        ResumeNavbarComponent,
+        HomeComponent,
+        AboutComponent,
+        ProjectsComponent,
+        ExperienceComponent,
+        ContactComponent,
+        NotFoundComponent,
+        ResumeLayoutComponent,
+        DefaultLayoutComponent,
+        BlogComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        NgbModule,
+        RouterModule,
+        AppRoutingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
