@@ -5,9 +5,10 @@ import { NavbarService } from '../../services/navbar.service';
 import { FooterService } from '../../services/footer.service';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css'],
+    selector: 'app-experience',
+    templateUrl: './experience.component.html',
+    styleUrls: ['./experience.component.css'],
+    standalone: false
 })
 export class ExperienceComponent implements OnInit {
   public title: string = 'Experience';
