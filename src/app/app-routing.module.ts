@@ -44,7 +44,7 @@ const routes: Routes = [
     errorHandler: (error) => {
       console.error('Navigation/Router error:', error);
     },
-    useHash: false,
+    useHash: true,
   })],
   exports: [RouterModule],
   providers: [provideRouter(routes)],
