@@ -15,7 +15,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+<<<<<<< HEAD
 Run `ng build --configuration production` to build the project. The build artifacts will be stored in the `dist/portfolio` directory.
+=======
+Run `ng build --configuration production` to build the project. The build artifacts will be stored in the `dist/` directory.
+>>>>>>> parent of 9537bf6 (updated readme)
 
 ## Running unit tests
 
