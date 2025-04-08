@@ -43,7 +43,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     errorHandler: (error) => {
       console.error('Navigation/Router error:', error);
-    }
+    },
+    useHash: false,
   })],
   exports: [RouterModule],
   providers: [provideRouter(routes)],
