@@ -44,17 +44,5 @@ export class AboutComponent implements OnInit {
 
       this.posts = data;
     });
-
-    // var index = 0;
-    // var interval = setInterval(() => {
-    //   if (index === this.title.length) {
-    //     index = 0;
-    //   }
-    //   this.title = this.title
-    //     .slice(index, index + 1)
-    //     .concat(this.title.slice(0, index))
-    //     .concat(this.title.slice(index + 1));
-    //   index++;
-    // }, 3000);
   }
 }
