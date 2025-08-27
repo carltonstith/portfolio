@@ -6,18 +6,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BlogService {
-  private baseUrl: string = '';
+  // private baseUrl: string = '';
+   private baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
 
   constructor(private http: HttpClient) {
-    if (isDevMode()==true) {
-      // console.log('Development mode');
-      // console.log(isDevMode());
-      this.baseUrl = 'http://localhost/dotCeeJayS/wp-json/wp/v2/posts'
-    } else {
-      // console.log('Production mode');
-      // console.log(isDevMode());
-      this.baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
-    }
+    // if (isDevMode()==true) {
+    //   // console.log('Development mode');
+    //   // console.log(isDevMode());
+    //   this.baseUrl = 'http://localhost/dotCeeJayS/wp-json/wp/v2/posts'
+    // } else {
+    //   // console.log('Production mode');
+    //   // console.log(isDevMode());
+    //   this.baseUrl = 'https://www.ceejaysmedia.com/dotCeeJayS/wp-json/wp/v2/posts';
+    // }
   }
 
   getAllPosts():Observable<any> {
